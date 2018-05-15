@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Enter data to be Inserted"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonInsert"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonInsert"
+        android:layout_centerHorizontal="true"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/buttonRetrieve"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/buttonInsert"
+        android:text="Retrieve" />
+
+    <TextView
+        android:id="@+id/textViewDbContent"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonInsert" />
+
+    <ListView
+        android:id="@+id/lvResult"
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonInsert"
+        android:layout_marginTop="42dp" />
+
+</android.widget.RelativeLayout>
